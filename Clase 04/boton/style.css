@@ -1,0 +1,20 @@
+.button {
+  border-radius: 25px;
+  padding: 10px 30px 10px 30px;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgb(231, 231, 231);
+  /* padding: 10px 30px;*/
+}
+
+.b-violet {
+  background-color: #2297EC;
+}
+
+.b-blue {
+  background-color: #9043F1;
+}
+
+.b-orange{
+  background-color: #EA9D2B;
+}

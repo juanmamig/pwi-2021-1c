@@ -1,0 +1,27 @@
+/*Reseteamos los márgenes del body*/
+body, h1 {
+  margin: 0;
+}
+
+header {
+  background-color: orange;
+}
+
+/*
+- Si tengo una etiqueta de bloque que NO ocupa el 100% porque le limitamos el ancho, entonces
+para centrar TODA esta etiqueta, utilizamos la propiedad margin: 0 auto; 
+ó
+margin-right: auto;
+margin-left: auto;
+*/
+
+/*
+1440px;
+1200px;
+1024px;
+*/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
