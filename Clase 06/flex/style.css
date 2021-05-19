@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  border: 2px solid black;
+  max-width: 1200px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  margin: 10px;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-space-between {
+  justify-content: space-between;
+}
+
+nav {
+  background-color:palevioletred;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
