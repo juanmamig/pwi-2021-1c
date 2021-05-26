@@ -3,8 +3,13 @@
   border-color: rebeccapurple;
 }
 
-.btn-primary:hover, .btn-primary:active, .btn-primary:hover {
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
   color: #fff;
   background-color: #5a124e;
   border-color: #5a124e;
+}
+
+.carrousel-c-container {
+  max-width: 768px;
+  margin: 0 auto;
 }
