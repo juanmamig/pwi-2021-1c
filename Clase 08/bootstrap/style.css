@@ -1,0 +1,22 @@
+.bg-green {
+  background-color: #0dad68;
+}
+
+.navbar-gray a {
+  color: rgb(98, 98, 98);
+}
+
+.main-image {
+  width: 250px;
+}
+
+.hero {
+  background-image: url('img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.color-white {
+  color: white;
+}
