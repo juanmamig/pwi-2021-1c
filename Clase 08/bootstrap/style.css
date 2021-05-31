@@ -20,3 +20,12 @@
 .color-white {
   color: white;
 }
+
+.hero-info-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+div {
+  border: 1px solid black;
+}
