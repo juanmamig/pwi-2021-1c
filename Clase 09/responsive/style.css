@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* 
  Como máximo, el dispositivo tiene 768px
  Para dispositivos menores a 768px
