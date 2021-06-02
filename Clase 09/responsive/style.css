@@ -4,11 +4,18 @@
 */
 
 body {
+  margin: 0;
   background-color: palevioletred;
 }
 
 .main-title {
   font-size: 46px;
+}
+
+.main-nav-ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 .box {
@@ -29,6 +36,8 @@ body {
   }
 }
 
+
+/*[0, 768]*/
 @media(max-width: 768px) {
   body {
     background-color: orangered;
@@ -41,4 +50,22 @@ body {
   .flex-container {
     flex-direction: column;
   }
+
+  /* .box {
+    width: calc(100% - 20px);
+  } */
+
+  .box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .flex-container {
+    padding: 10px;
+  }
+
+  .main-nav-ul {
+    display: block;
+  }
+
 }
