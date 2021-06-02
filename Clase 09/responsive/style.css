@@ -1,0 +1,23 @@
+/* 
+ Como máximo, el dispositivo tiene 768px
+ Para dispositivos menores a 768px
+*/
+
+body {
+  background-color: palevioletred;
+}
+
+.main-title {
+  font-size: 46px;
+}
+
+
+@media(max-width: 768px) {
+  body {
+    background-color: orangered;
+  }
+
+  .main-title {
+    font-size: 30px;
+  }
+}

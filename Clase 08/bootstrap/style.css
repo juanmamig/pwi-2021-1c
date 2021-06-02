@@ -29,3 +29,16 @@
 div {
   border: 1px solid black;
 }
+
+
+@media (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
