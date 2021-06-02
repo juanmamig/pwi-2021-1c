@@ -11,6 +11,23 @@ body {
   font-size: 46px;
 }
 
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: plum;
+  margin: 10px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+@media (max-width: 992px) {
+  body {
+    background-color: peru;
+  }
+}
 
 @media(max-width: 768px) {
   body {
@@ -19,5 +36,9 @@ body {
 
   .main-title {
     font-size: 30px;
+  }
+
+  .flex-container {
+    flex-direction: column;
   }
 }
