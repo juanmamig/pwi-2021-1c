@@ -1,0 +1,198 @@
+/*
+
+La definición es la siguiente:
+
+@font-face {
+  font-family: nombreDeFuente;
+  src: local("NombreDeFuenteEstándarEnLaPcDelUsuario"),
+  url('urlALaFont.ttf') format("nombreDeFormato");
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+Respecto al SRC:
+If the local() function is provided, specifying a font name to look for on the user's computer, and the user agent finds a match, that local font is used. Otherwise, the font resource specified using the url() function is downloaded and used.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+
+
+Respecto del soporte:
+https://css-tricks.com/snippets/css/using-font-face/
+
+https://www.w3schools.com/css/css3_fonts.asp
+
+Respecto de conversiones:
+https://onlinefontconverter.com/
+
+@font-face {
+  font-family: nombreDeFuente;
+  src: local("NombreDeFuenteEstándarEnLaPcDelUsuario"),
+  url('urlALaFont.ttf') format("ttf"),
+  url('urlALaFont.woff') format("woff");
+  font-weight: bold;
+  font-style: bold;
+}
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face#font_mime_types
+
+
+*/
+
+
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayXXThinItalic.woff') format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayXXThin.woff') format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayXThinItalic.woff') format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayXThin.woff') format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayThinItalic.woff') format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayThin.woff') format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayRomanItalic.woff') format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayRoman.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayMediumItalic.woff') format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayMedium.woff') format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/* Noten el weight en esta definición de la light */
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayLightItalic.woff') format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayLight.woff') format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayBoldItalic.woff') format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayBold.woff') format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayBlackItalic.woff') format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueHass';
+  src: url('fonts/NeueHaasDisplayBlack.woff') format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.xx-thin {
+  font-family: 'NeueHass', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.x-thin {
+  font-family: 'NeueHass', Arial, Helvetica, sans-serif;
+  font-weight: 200; 
+}
+
+.thin {
+    font-family: 'NeueHass', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.roman {
+  font-family: 'NeueHass', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.medium {
+  font-family: 'NeueHass', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+/* Noten la definición de la light */
+.light {
+  font-family: 'NeueHass', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.bold {
+  font-family: 'NeueHass', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.black {
+    font-family: 'NeueHass', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
