@@ -7,7 +7,7 @@ La definición es la siguiente:
   src: local("NombreDeFuenteEstándarEnLaPcDelUsuario"),
   url('urlALaFont.ttf') format("nombreDeFormato");
   font-weight: bold;
-  font-style: bold;
+  font-style: normal;
 }
 
 
