@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 80px 0;
+  width: 100%;
+}
+
+.red {
+  color: red;
+}
+
+.bd-navbar .navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    margin: 0;
+    width: 40%;
+  }
+}

@@ -21,3 +21,38 @@ console.log("Tu edad es " + edades[0]);
 for (let i = 0; i < edades.length; i++) {
   console.log(`Tu edad es ${edades[i]}`);
 }
+
+const productos = [
+  {
+    nombre: 'leche',
+    precio: 100,
+    marca: 'Sancor'
+  },
+  {
+    nombre: 'sal',
+    precio: 65,
+    marca: 'Dos Anclas'
+  },
+  {
+    nombre: 'pan',
+    precio: 120,
+    marca: 'Bimbo',
+    tipos: [
+      {
+        tipo: 'lactal',
+        ingredientes: ["harina", "sal", "leche"]
+      },
+      {
+        tipo: 'salvado',
+        ingredientes: ["harina", "sal", "leche"]
+      }
+    ]
+  }
+];
+
+for (let i = 0; i < productos.length; i++) {
+  console.log(productos[i].nombre);
+  /*
+    <h2>productos[i].nombre</h2>
+  */
+}
