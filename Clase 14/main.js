@@ -53,3 +53,26 @@ allH2.forEach(function (item) {
 // 1er Vuelta => (Primer item)
 // 2da Vuelta => (Segundo item)
 // 3er Vuelta => (Tercer item)
+
+
+// Parámetros en string que acepta querySelector
+// const h2 = document.querySelector("tagName");
+// const h2 = document.querySelector(".nombreDeClase");
+// const h2 = document.querySelector("#id");
+// const h2 = document.querySelector(".mainNav ul");
+
+
+// Agregar clases desde JS
+const p = document.querySelector(".mainP");
+p.classList.add("highlight");
+// p.classList.remove("highlight");
+// p.classList.toggle("highlight");
+
+// Toggle => Si tiene la clase, la elimino y si no tiene la clase, la agrego.
+
+const a = document.querySelector("a");
+const hrefValue = a.getAttribute("href"); // https://google.com
+console.log(hrefValue);
+
+a.setAttribute("href", "https://yahoo.com.ar");
+
