@@ -1,0 +1,13 @@
+.dark {
+  background-color: rgb(27, 27, 27);  
+}
+
+.dark h1{
+  color: white;
+}
+
+.dark button{
+  background-color: rgb(27, 27, 27);
+  border: 1px solid white;  
+  color: white;
+}
