@@ -76,3 +76,25 @@ console.log(hrefValue);
 
 a.setAttribute("href", "https://yahoo.com.ar");
 
+
+/*-------------- Cambiar contenido de una etiqueta */
+const span = document.querySelector(".span-content");
+console.log(span.textContent);
+span.textContent = "Contenido agregado desde JS";
+
+span.textContent = '<a href="#">Ir a Google</a>';
+span.innerHTML = '<a href="#">Ir a Google</a>';
+
+
+/* Conclusión */
+/*
+
+Siempre usamos el mismo sistema:
+1. Seleccionamos elementos con el querySelector
+2. Los modificamos
+  - Clases (classList)
+  - Estilos (style)
+  - Atributos (setAttribute / getAttribute)
+  - Contenidos (textContent / innerHTML )
+
+*/
