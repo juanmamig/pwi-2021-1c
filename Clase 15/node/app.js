@@ -3,5 +3,5 @@ const fs = require('fs');
 const utils = require('./utils.js');
 console.log(utils);
 
-fs.writeFileSync('nombres.txt', 'Juan Ma Migliore');
-fs.appendFileSync('nombres.txt', 'Danilo');
+// fs.writeFileSync('nombres.txt', 'Juan Ma Migliore');
+// fs.appendFileSync('nombres.txt', 'Danilo');
