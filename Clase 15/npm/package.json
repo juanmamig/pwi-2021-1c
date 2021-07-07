@@ -1,0 +1,14 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "Third module class",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Ma",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.6.0"
+  }
+}
