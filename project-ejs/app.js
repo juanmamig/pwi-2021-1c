@@ -16,7 +16,7 @@ app.get('/', (req,res) => {
 
 app.get('/contacto', (req,res) => {
     res.render('pages/contacto', {
-        title: 'E-commerce | Contacto'
+        title: 'E-commerce | Contacto',
     })
 });
 
