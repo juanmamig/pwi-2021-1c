@@ -2,10 +2,13 @@ const express = require('express');
 const app = express();
 
 
+// app.get('' , (req, res) => { });
+
 // Paso uno: defino las rutas que quiero.
 app.get('', (req, res) => {
     res.send('Página Principal');
 });
+
 
 app.get('/consultas', (req, res) => {
     res.send('<h1>Consultas</h1>');
@@ -20,5 +23,5 @@ app.get('/usuario', (req, res) => {
 });
 
 app.listen(3001, () => {
-    console.log("Server corriendo en el puerto 3000");
+    console.log("Server corriendo en el puerto 3001");
 })
