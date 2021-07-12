@@ -11,9 +11,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('', (req, res) => {
 
-  products.getAllProducts((listOfProducts) => {
+  products.getAllProducts((error, listOfProducts) => {
+
+    if(error) {
+      return res.send('FATAL ERROR');
+    }
+    
     const JSONProducts = JSON.parse(listOfProducts);
-    res.render('index', {
+    return res.render('index', {
       title: 'E-commerce',
       JSONProducts
     });
@@ -29,3 +34,5 @@ app.get('/contacto', (req,res) => {
 app.listen(3000, () => {
   console.log("Funcionando en el puerto 3000");
 });
+
+

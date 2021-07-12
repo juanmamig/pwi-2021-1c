@@ -48,3 +48,29 @@ const loguear = (callback) => {
 loguear((response)=> { if(response) { console.log('Está Logueado') }});
 
 // (response) => {  if(response) {traerFotosDelUsuario(); } }
+
+
+
+
+const loguear = (user, pass, functionSaludar) => {
+  // 1 Se va a la base de Datos
+  // 2 Busca si el usuario y contraeña están bien
+  // 3 Vuelve con una respuesta
+  // TODO eso tarda 3 segundos.
+  functionSaludar('pepe');
+}
+
+function saludar(nombre) {
+  console.log('Hola' + nombre);
+}
+
+loguear("Juan", 123, saludar); // undefined
+
+if(isLogged) {
+  // muestro página principal
+}
+
+
+
+
+loguear((respuesta)=> { if(respuesta) { console.log('Está Logueado') }});
