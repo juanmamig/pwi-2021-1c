@@ -1,13 +1,12 @@
-const products = [
-  {
-    id: 1,
-    name: 'Xiaomi Mi A2'
-  },
-  {
-    id: 2,
-    name: 'Xiaomi PocoPhone X3'
-  }
-];
+const request = require('postman-request');
 
-module.exports = products;
+const getAllProducts = (callback) => {
+  request('https://fakestoreapi.com/products', (error, res, body) => {
+    callback(body);
+  });
+}
+
+module.exports = {
+  getAllProducts
+};
 
