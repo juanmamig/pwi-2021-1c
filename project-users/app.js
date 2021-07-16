@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const products = require('./utils/products');
+const users = require('./utils/users');
 const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
@@ -8,21 +9,19 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 app.get('', (req, res) => {
 
-  products.getAllProducts((error, listOfProducts) => {
-
+  users.getUsers((error, data) => {
     if(error) {
-      return res.send('FATAL ERROR');
+      return res.send('Error connecting with server');
     }
-    
-    const JSONProducts = JSON.parse(listOfProducts);
     return res.render('index', {
       title: 'E-commerce',
-      JSONProducts
+      products,
+      users: data
     });
   });
+
 });
 
 app.get('/contacto', (req,res) => {

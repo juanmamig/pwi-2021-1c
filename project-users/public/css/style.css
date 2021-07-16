@@ -1,0 +1,17 @@
+h1 {
+  color: red;
+}
+
+
+h3 {
+  color: salmon;
+}
+
+.users-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-container {
+  width: 25%;
+}
