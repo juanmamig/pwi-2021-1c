@@ -14,5 +14,18 @@ MongoClient.connect(mongoURL, { useNewUrlParser: true }, (error, client) => {
     name: 'Xiaomi',
     price: 35000
   });
+
+
+  db.collection('products').insertMany([
+    {
+    name: 'Mi A2',
+    price: 27000
+    },
+    {
+      name: 'Poco Phone X3',
+      price: 45000
+    }
+  ]);
+
   return console.log("Conexión exitosa");
 });

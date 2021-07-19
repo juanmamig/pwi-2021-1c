@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/meta') %>
+</head>
+<body>
+  <%- include('./partials/header') %>
+  <h1>Ecommerce EJS</h1>
+
+  <% JSONProducts.forEach(product => { %>
+    <h3><%= product.title %></h3>
+  <% }) %>
+</body>
+</html>
