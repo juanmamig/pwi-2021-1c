@@ -18,23 +18,49 @@ app.post('/products', (req, res) => {
   });
 })
 
-
 app.get('/products', (req, res) => {
   Product.find().then((products) => {
     res.send(products);
   }).catch((err) => {
     res.status(500).send(err)
   })
-  // Product.find({name: 'Juan Ma'});
 });
 
-app.get('user/:id', (req, res) => {
+app.get('/product/:id', (req, res) => {
   const _id = req.params.id;
   Product.findById(_id).then((product) => {
-    res.send.apply(product);
+    if(!product) {
+      return res.status(404).send();
+    }
+    res.send(product);
   }).catch(err => {
     res.status(404).send(err);
   })
+});
+
+app.patch('/product/:id', (req, res) => {
+  const _id = req.params.id;
+  console.log(_id);
+  Product.findByIdAndUpdate(_id, req.body, {new: true, runValidators: true}).then((product) => {
+    if(!product) {
+      return res.status(404).send();
+    }
+    res.send(product);
+  }).catch(err => {
+    res.status(404).send(err);
+  });
+})
+
+app.patch('/product/:id', (req, res) => {
+  const _id = req.params.id;
+  Product.findByIdAndUpdate(_id, req.body, {new: true, runValidators: true}).then((product) => {
+    if(!product) {
+      return res.status(404).send();
+    }
+    res.send(product);
+  }).catch(err => {
+    res.status(404).send(err);
+  });
 })
 
 app.listen(port, () => {
