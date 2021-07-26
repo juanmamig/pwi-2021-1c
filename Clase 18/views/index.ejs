@@ -7,8 +7,16 @@
   <%- include('./partials/header') %>
   <h1>Ecommerce EJS</h1>
 
-  <% JSONProducts.forEach(product => { %>
-    <h3><%= product.title %></h3>
-  <% }) %>
+  <div class="flex-container">
+    <% JSONProducts.forEach(product => { %>
+      <div class="card">
+        <h4><%= product.title %></h4>
+        <p><%= product.description %></p>
+        <img src="<%= product.image %>" alt="">
+      </div>
+      <% }) %>
+  </div>
+
+  
 </body>
 </html>

@@ -1,12 +1,9 @@
-require('./db/mongoose');
 const express = require('express');
-const app = express();
-const Product = require('./model/product');
+const router = new express.Router();
+const Product = require('../model/product');
 
-app.use(express.json());
-
-app.post('/product', (req, res) => {
-
+router.post('/product', (req, res) => {
+  console.log(req.body);
   // Instancio un nuevo producto
   const product = new Product(req.body)
   product.save()
@@ -22,6 +19,5 @@ app.post('/product', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-  console.log('Escuchando puerto 3000');
-})
+
+module.exports = router;
