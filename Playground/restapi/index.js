@@ -18,10 +18,14 @@ app.post('/products', (req, res) => {
   });
 })
 
-app.get('/products', (req, res) => {
-  Product.find().then((products) => {
-    res.send(products);
+app.get('/products/:category', (req, res) => {
+  const category = req.params.category;
+
+  Product.find({category}).then((products) => {
+    res.render(products);
+
   }).catch((err) => {
+    
     res.status(500).send(err)
   })
 });
@@ -66,3 +70,23 @@ app.patch('/product/:id', (req, res) => {
 app.listen(port, () => {
   console.log('Server is running on port ' + port);
 })
+
+const products = [
+  {
+    id: 1,
+    name: "algo",
+    category: "corpiños"
+  },
+  {
+    id: 2,
+    name: "algo",
+    category: "bombachas"
+  },
+  {
+    id: 3,
+    name: "algo",
+    category: "corpiños"
+  }
+];
+
+const filteredProducts = products.filter((product) => product.category === 'corpiños');

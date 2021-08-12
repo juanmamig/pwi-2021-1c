@@ -17,6 +17,32 @@
       <% }) %>
   </div>
 
+
+  [
+    {
+      name: 'LG',
+      price: 20000,
+      category: 'televisores'
+    },
+    {
+      name: 'Microondas Philips',
+      price: 20000,
+      category: 'microondas'
+    },
+    {
+      name: 'Celulares Xiaomi',
+      price: 20000,
+      category: 'celulares'
+    }
+  ]
+
+  <% JSONProducts.forEach(product => { %>
+      <a href="/products/<%= product.category %>" class="card">
+        Ver más
+      </a>
+    <% }) %>
+
+
   
 </body>
 </html>

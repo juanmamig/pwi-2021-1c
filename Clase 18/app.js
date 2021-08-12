@@ -31,6 +31,18 @@ app.get('/contacto', (req,res) => {
   });
 });
 
+app.get('/products/:category', (req, res) => {
+  const category = req.params.category;
+  meConectoALaApi(category, (err, data) => {
+    if (err) return err;
+    res.render('pages/products', {
+      data,
+      page: category
+    })
+  })
+  res.render('pages/allProducts')
+});
+
 app.listen(3000, () => {
   console.log("Funcionando en el puerto 3000");
 });

@@ -61,3 +61,10 @@ app.get('/product/:id', (req, res) => {
 app.listen(3000, () => {
   console.log('Escuchando puerto 3000');
 })
+
+
+app.get('/product/:id', (req, res) => {
+  const _id = req.params.id;
+});
+
+

@@ -13,7 +13,7 @@
 
     <h2>Productos</h2>
     <% products.forEach(product => { %>
-        <h3><%= product.name %></h3>
+        <h3 data-id="<%= product.id %>" ><%= product.name %></h3>
     <% }) %>
 </body>
 </html>
